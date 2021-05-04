@@ -1,3 +1,4 @@
+from selenium import webdriver
 import os
 from my_function import *
 import pandas as pd
@@ -6,7 +7,6 @@ import datetime as datetime
 
 
 my_path = os.path.dirname(os.path.realpath(__file__))
-from selenium import webdriver
 
 options = webdriver.ChromeOptions()
 options.add_experimental_option("excludeSwitches", ["enable-logging"])
@@ -27,7 +27,7 @@ driver = webdriver.Chrome(
 
 news_list = []
 
-for page_navigation in range(2):
+for page_navigation in range(6):
     number = 1
     driver.get(url)
     articles = driver.find_elements_by_class_name("article-teaser")
@@ -54,8 +54,9 @@ for page_navigation in range(2):
             news_items = {
                 "topic": topic,
                 "title": title,
-                "link": links,
                 "article": essay,
+                "date": time,
+                "link": links
             }
             news_list.append(news_items)
             print(f"{x}. {topic} -> {title} , {time}")
