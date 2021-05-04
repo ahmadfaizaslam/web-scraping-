@@ -11,9 +11,9 @@ Selenium is an open-source web-based automation tool.
 ### **2. Chrome WebDriver**
 [Download](https://chromedriver.chromium.org/downloads) the version depending on your chrome version that you are using
 
-Then you have multiple [options](https://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.chrome.webdriver):\
-* put it in the same directory as your python script\
-* specify the location directly via executable_path\
+Then you have multiple [options](https://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.chrome.webdriver):
+* put it in the same directory as your python script
+* specify the location directly via executable_path
 
         driver = webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
 
