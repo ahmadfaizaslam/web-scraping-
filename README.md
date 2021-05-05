@@ -36,6 +36,10 @@ Latent Dirichlet Allocation (LDA) is an example of topic model and is used to cl
 
     pip install gensim
 
+[**LDA**](http://bl.ocks.org/AlessandraSozzi/raw/ce1ace56e4aed6f2d614ae2243aab5a5/#topic=9&lambda=1&term=) is a web-based interactive visualisation of topics estimated using LDA. It provides a global view of the topics (and how they differ from each other), while at the same time allowing for a deep inspection of the terms most highly associated with each individual topic.
+
+    pip install pyLDAvis
+
 
 
 >it is what it is
