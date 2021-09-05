@@ -77,10 +77,10 @@ for web_page in range(5):
             "negative_score": neg_score,
             "compound_score": compound_score,
         }
-        collection.insert_one(news_items)
+        # collection.insert_one(news_items)
 
         print(f"{number}. {title} ,{published_date}")
-        # print(neg_score, pos_score, compound_score)
+        print(neg_score, pos_score, compound_score)
         time.sleep(1)
 
         number += 1

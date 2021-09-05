@@ -19,7 +19,7 @@ options.add_experimental_option("excludeSwitches", ["enable-logging"])
 # options.add_argument("--disable-extensions")
 # options.add_argument("--ignore-certificate-errors")
 # options.add_argument("--incognito")
-options.add_argument("--headless")
+# options.add_argument("--headless")
 driver = webdriver.Chrome(
     options=options, executable_path="C:\Program Files (x86)\chromedriver.exe"
 )
