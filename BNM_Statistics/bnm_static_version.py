@@ -9,9 +9,11 @@ url = "https://www.bnm.gov.my/documents/20124/4196742/1.1.xls"
 bnm_data = {
     "Reserve Money": "https://www.bnm.gov.my/documents/20124/4196742/1.1.xls",
     "Currency in Circulation by Denomination": "https://www.bnm.gov.my/documents/20124/4196742/1.2.xls",
-    "Merchant/Investment Banks: Statement of Assets": "https://www.bnm.gov.my/documents/20124/4196742/1.7.4.xls",
+    "Monetary Aggregates M1, M2 and M3": "https://www.bnm.gov.my/documents/20124/4495210/1.3.xls"
+    # "Merchant/Investment Banks: Statement of Assets": "https://www.bnm.gov.my/documents/20124/4196742/1.7.4.xls",
 }
 
 for file_name, url in bnm_data.items():
     filename = file_name + ".xls"
+    print(filename)
     retrieve(url, filename)

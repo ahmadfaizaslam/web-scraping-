@@ -4,7 +4,7 @@ import requests
 from urllib.request import urlretrieve as retrieve
 
 today = datetime.datetime.today()
-# today = datetime.date(2021, 6, 30)
+# today = datetime.date(2021, 6, 29)
 
 # print(today)
 def last_day_of_month(any_day):
@@ -18,3 +18,5 @@ if today != lastday:
     month = datetime.date(today.year, today.month - 2, today.day).strftime("%B")
 else:
     month = datetime.date(today.year, today.month - 1, today.day).strftime("%B")
+
+print(month)
